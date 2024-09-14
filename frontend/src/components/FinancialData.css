@@ -1,0 +1,71 @@
+.financial-data-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.financial-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.financial-table th,
+.financial-table td {
+  padding: 12px 15px;
+  text-align: right;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.financial-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #495057;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.financial-table td:first-child,
+.financial-table th:first-child {
+  text-align: left;
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.financial-table th:first-child {
+  z-index: 11;
+}
+
+.financial-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.financial-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .financial-table th,
+  .financial-table td {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}

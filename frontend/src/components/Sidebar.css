@@ -1,0 +1,35 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px; /* Increased from 200px to 220px */
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Add scrollbar if content is too long */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  color: #007bff;
+}
